@@ -18,7 +18,6 @@ public class RoleUtil
             @Override
             public void run()
             {
-                instance.getLogger().info("Guilded user bound: ID " + userId + " to player " + MGBridge.getPlayerName(uuid));
                 // give the role to the user
                 for(int i = 0; i != maxRetries; i++)
                 {
@@ -47,7 +46,6 @@ public class RoleUtil
             @Override
             public void run()
             {
-                instance.getLogger().info("Guilded user unbound: ID " + userId + " from player " + MGBridge.getPlayerName(uuid));
                 // remove the role from the user
                 for(int i = 0; i != maxRetries; i++)
                 {

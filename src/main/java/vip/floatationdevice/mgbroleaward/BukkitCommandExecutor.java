@@ -28,7 +28,7 @@ public class BukkitCommandExecutor implements CommandExecutor
                         sender.sendMessage("You don't have permission to do a complete role check");
                     break;
                 case "help": // show help
-                    sender.sendMessage("\"/mgbroleaward reload\": reload the plugin\n\"/mgbroleaward check\": force a complete check of all Guilded users' roles\n\"/mgbroleaward help\": show this message");
+                    sender.sendMessage("/mgbroleaward reload - reload the plugin\n/mgbroleaward check - force a complete check of all Guilded users' roles\n/mgbroleaward help - show this message");
                     break;
             }
         }

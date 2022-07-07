@@ -13,6 +13,3 @@ permissions:
   mgbroleaward.check:
     description: The permission to use the check command
     default: op
-  mgbroleaward.help:
-    description: The permission to use the help command
-    default: op
