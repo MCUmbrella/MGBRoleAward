@@ -1,0 +1,6 @@
+# ID of the role given to the Guilded user after binding to Minecraft
+roleId: 0
+# If an error occurred while setting the role, retry the operation until this number of attempts is reached
+maxRetries: 10
+# Repeat the failed role operation after this many seconds
+retryDelaySec: 5
