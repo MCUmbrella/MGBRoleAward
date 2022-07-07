@@ -29,7 +29,7 @@ public class RoleUtil
                     }
                     catch(Exception e)
                     {
-                        instance.getLogger().warning("Failed to give role to user with ID " + userId + ": " + e.getMessage() + " (try " + (i + 1) + "/" + maxRetries + ")");
+                        instance.getLogger().warning("Failed to give role to user with ID " + userId + ": " + e.getMessage() + " (bound to player " + MGBridge.getPlayerName(uuid) + ", try " + (i + 1) + "/" + maxRetries + ")");
                         Bukkit.getScheduler().runTaskLater(instance, this, retryDelaySec * 20);
                     }
                 }
@@ -57,7 +57,7 @@ public class RoleUtil
                     }
                     catch(Exception e)
                     {
-                        instance.getLogger().warning("Failed to remove role from user with ID " + userId + ": " + e.getMessage() + " (try " + (i + 1) + "/" + maxRetries + ")");
+                        instance.getLogger().warning("Failed to remove role from user with ID " + userId + ": " + e.getMessage() + " (bound to player " + MGBridge.getPlayerName(uuid) + ", try " + (i + 1) + "/" + maxRetries + ")");
                         Bukkit.getScheduler().runTaskLater(instance, this, retryDelaySec * 20);
                     }
                 }
